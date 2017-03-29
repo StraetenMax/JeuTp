@@ -20,7 +20,7 @@ public class Personnage {
 		poids = cPoids;
 		System.out.println("Le personnage initialié");
 	}
-	
+	//méthodes
 	public void personnageMarche(){
 		System.out.println("Le personnage marche");
 	}

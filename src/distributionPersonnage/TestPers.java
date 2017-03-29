@@ -3,6 +3,7 @@ package distributionPersonnage;
 public class TestPers {
 
 	public static void main(String[] args) {
+		//class Personnage
 		Personnage personnage = new Personnage();
 		Personnage personnage1 = new Personnage("humain", 180,80);
 		personnage1.personnageMarche();
@@ -10,7 +11,15 @@ public class TestPers {
 		personnage1.description();
 		System.out.println(personnage1.description1());
 		System.out.println(personnage1.getPoids());
-		System.out.println(personnage1.taille());
+		System.out.println(personnage1.getTaille());
+		
+		//class PersonnageJoueur
+		PersonnageJoueur persJ1 = new PersonnageJoueur();
+		PersonnageJoueur persJ2 = new PersonnageJoueur("Géant", 218, 180, "Paul");
+		System.out.println(persJ2.getNom());
+		System.out.println(persJ2.getTaille()+" cm");
+		PersonnageJoueur persJ3 = new PersonnageJoueur("Geant",218,180,"Paul");
+		persJ3.setNom("Philippe");
 	}
 
 }
