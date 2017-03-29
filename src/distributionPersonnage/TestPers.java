@@ -21,6 +21,11 @@ public class TestPers {
 		PersonnageJoueur persJ3 = new PersonnageJoueur("Geant",218,180,"Paul");
 		persJ3.persJoueurMarche();
 		System.out.println(persJ3.persdescription1());
+	
+		//class PersonnageJoueurGuerrier
+	PersonnageJoueurGuerrier p1 = new PersonnageJoueurGuerrier();
+	PersonnageJoueurGuerrier p2 = new PersonnageJoueurGuerrier("Grand", 300, 200,"Pierre", 30,30,true);
+	
 	}
 
 }

@@ -26,11 +26,7 @@ public class PersonnageJoueur extends Personnage {
 	public void persJoueurMarche(){
 		System.out.println("le personnage joueur marche");
 	}
-	
-	//public void persdescription(){
-	//	System.out.println(super.description() + this.getNom());
-	//}
-	
+
 	public String persdescription1(){
 		String des = (super.description1()+" et s'appelle "+this.getNom());
 		return des;
