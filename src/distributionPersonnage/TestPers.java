@@ -19,7 +19,8 @@ public class TestPers {
 		System.out.println(persJ2.getNom());
 		System.out.println(persJ2.getTaille()+" cm");
 		PersonnageJoueur persJ3 = new PersonnageJoueur("Geant",218,180,"Paul");
-		persJ3.setNom("Philippe");
+		persJ3.persJoueurMarche();
+		System.out.println(persJ3.persdescription1());
 	}
 
 }
