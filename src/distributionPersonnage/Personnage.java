@@ -29,6 +29,13 @@ public class Personnage {
 		System.out.println("Le personnage dors");
 	}
 	
+	public void description(){
+		System.out.println("Le personnage de race "+race+", mesure "+taille+" mm et pèse "+poids+" kg");
+	}
 	
+	public String description1(){
+		String pers = "Mon personnage "+this.race+" mesure "+this.taille+" mm et pèse "+this.poids+" kg";
+		return pers;
+	}
 	
 }
