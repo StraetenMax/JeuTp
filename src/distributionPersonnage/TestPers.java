@@ -9,6 +9,8 @@ public class TestPers {
 		personnage.personnageDors();
 		personnage1.description();
 		System.out.println(personnage1.description1());
+		System.out.println(personnage1.getPoids());
+		System.out.println(personnage1.taille());
 	}
 
 }
