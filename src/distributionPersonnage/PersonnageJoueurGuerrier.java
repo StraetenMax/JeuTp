@@ -23,4 +23,29 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 			fatigue = cFatigue;
 			System.out.println("Je suis le personnage Guerrier");
 		}
+		
+		public int getForce(){
+			return force;
+		}
+		
+		public int getNiveauEnergie(){
+			return niveauEnergie;	
+		}
+		
+		public boolean getFatigue(){
+			return fatigue;
+		}
+		public void setForce(int cForce){
+			force = cForce;
+		}
+		public void setNiveau(int cNiveauEnergie){
+			niveauEnergie = cNiveauEnergie;
+		}
+		public void estMoinsFortQue(int nForce){
+			if(force< nForce){
+				System.out.println("dont la force" );
+			}else{
+				System.out.println("ddd est la force");
+			}
+		}
 }
