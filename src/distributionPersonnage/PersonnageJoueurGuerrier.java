@@ -13,7 +13,7 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 			super();
 			force= 0;
 			niveauEnergie = 0;
-			fatigue = true;
+			this.setFatigue();
 			System.out.println("Je suis le personnage G");
 		}
 		
@@ -42,10 +42,20 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		}
 		public void setNiveau(int cNiveauEnergie){
 			niveauEnergie = cNiveauEnergie;
+			this.setFatigue();
+		}
+		
+		public void setFatigue(){
+			if(this.getNiveauEnergie()==0){
+				fatigue =true;
+			}else{
+				fatigue =false;
+			}
+			
 		}
 		
 		public boolean estMoinsFortQue(PersonnageJoueurGuerrier pJG1){
-			 boolean personnageJoueurGuerrierEstMoinsFortQue = true;
+			 boolean personnageJoueurGuerrierEstMoinsFortQue;
 			if(pJG1.getForce()< this.getForce()){
 				personnageJoueurGuerrierEstMoinsFortQue = true;
 			}else{

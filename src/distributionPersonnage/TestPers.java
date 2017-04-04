@@ -4,9 +4,9 @@ public class TestPers {
 
 	public static void main(String[] args) {
 		Personnage P1 = new Personnage("Humain",180,75);
-	//	PersonnageJoueur PJ1 = new PersonnageJoueur("Nain",100,90,30,100);
+	PersonnageJoueur PJ1 = new PersonnageJoueur("Nain",100,90,"Pierre");
 	//	PersonnageJoueurGuerrier PJG1 = new PersonnageJoueurGuerrier("Orc",200,180,40,100);
-		PersonnageJoueurGuerrier PJG1 = new PersonnageJoueurGuerrier("Orc", 200,180, null, 4, 100, false);
+		PersonnageJoueurGuerrier PJG1 = new PersonnageJoueurGuerrier("Orc", 200, 180, null, 4, 100, false);
 		
 		
 		
