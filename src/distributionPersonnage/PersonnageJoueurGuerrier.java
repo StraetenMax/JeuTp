@@ -42,6 +42,7 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 			niveauEnergie = cNiveauEnergie;
 		}
 		public void estMoinsFortQue(int nForce){
+			 boolean personnageJoueurGuerrier = true;
 			if(force< nForce){
 				System.out.println("dont la force" );
 			}else{
