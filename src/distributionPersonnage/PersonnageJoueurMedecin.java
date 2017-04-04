@@ -22,4 +22,20 @@ public class PersonnageJoueurMedecin extends PersonnageJoueur{
 		public void setNbMedicaments(int fNbMedicaments){
 			nbMedicaments = fNbMedicaments;
 		}
+		
+		public boolean plusGrandQue(){
+			boolean PersonnageJoueurMedecin = true;
+			if(taille<){
+				
+			}else{
+				System.out.println();
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
 }
