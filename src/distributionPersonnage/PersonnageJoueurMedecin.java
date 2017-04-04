@@ -16,4 +16,10 @@ public class PersonnageJoueurMedecin extends PersonnageJoueur{
 			nbMedicaments = pNbMedicaments;
 			System.out.println("je suis le joueur Médecin 2");
 		}
+		public int getNbMedicaments(){
+			return nbMedicaments;
+		}
+		public void setNbMedicaments(int fNbMedicaments){
+			nbMedicaments = fNbMedicaments;
+		}
 }
