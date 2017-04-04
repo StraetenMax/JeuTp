@@ -23,13 +23,14 @@ public class PersonnageJoueurMedecin extends PersonnageJoueur{
 			nbMedicaments = fNbMedicaments;
 		}
 		
-		public boolean plusGrandQue(){
-			boolean PersonnageJoueurMedecin = true;
-			if(taille<){
-				
+		public boolean plusGrandQue(PersonnageJoueurMedecin pJG2){
+			 boolean personnageJoueurMedecinPlusGrandQue = false;
+			if(pJG2.getTaille()< this.getTaille()){
+				personnageJoueurMedecinPlusGrandQue = false;
 			}else{
-				System.out.println();
+				personnageJoueurMedecinPlusGrandQue = true;
 			}
+			return personnageJoueurMedecinPlusGrandQue;
 		}
 		
 		

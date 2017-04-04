@@ -1,5 +1,7 @@
 package distributionPersonnage;
 
+
+
 public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		//attributs - propriétés
 		private int force;
@@ -41,12 +43,15 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		public void setNiveau(int cNiveauEnergie){
 			niveauEnergie = cNiveauEnergie;
 		}
-		public void estMoinsFortQue(int nForce){
-			 boolean personnageJoueurGuerrier = true;
-			if(force< nForce){
-				System.out.println("dont la force" );
+		
+		public boolean estMoinsFortQue(PersonnageJoueurGuerrier pJG1){
+			 boolean personnageJoueurGuerrierEstMoinsFortQue = true;
+			if(pJG1.getForce()< this.getForce()){
+				personnageJoueurGuerrierEstMoinsFortQue = true;
 			}else{
-				System.out.println("ddd est la force");
+				personnageJoueurGuerrierEstMoinsFortQue = false;
 			}
+			return personnageJoueurGuerrierEstMoinsFortQue;
 		}
+			
 }
