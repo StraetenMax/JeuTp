@@ -18,11 +18,11 @@ public class PersonnageJoueurGuerrier extends PersonnageJoueur {
 		}
 		
 		//constructeur initialisé
-		public PersonnageJoueurGuerrier(String cRace, int cTaille, int cPoids, String cNom, int cForce, int cNiveauEnergie,boolean cFatigue){
+		public PersonnageJoueurGuerrier(String cRace, int cTaille, int cPoids, String cNom, int cForce, int cNiveauEnergie){
 			super(cRace,cTaille,cPoids,cNom);
 			force = cForce;
 			niveauEnergie = cNiveauEnergie;
-			fatigue = cFatigue;
+			this.setFatigue();
 			System.out.println("Je suis le personnage Guerrier");
 		}
 		
